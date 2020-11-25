@@ -1,7 +1,7 @@
 package ru.netology;
 
 import com.codeborne.selenide.SelenideElement;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,23 +14,23 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 class DebitCardApplication {
-    private WebDriver driver;
+ //   private WebDriver driver;
 
-   @BeforeAll
-    static void setUpAll() {
-       System.setProperty("webdriver.chrome.driver", "C:\\Users\\LG-book\\Downloads\\chromedriver.exe");
-    }
+  // @BeforeAll
+  //  static void setUpAll() {
+  //     System.setProperty("webdriver.chrome.driver", "C:\\Users\\LG-book\\Downloads\\chromedriver.exe");
+  //  }
 
-    @BeforeEach
-    void setUp() {
-        driver = new ChromeDriver();
-    }
+  //  @BeforeEach
+  //  void setUp() {
+  //      driver = new ChromeDriver();
+  //  }
 
-    @AfterEach
-    void tearDown() {
-        driver.quit();
-        driver = null;
-    }
+   // @AfterEach
+ //   void tearDown() {
+ //       driver.quit();
+  //      driver = null;
+ //   }
 
     @Test
     void shouldSubmitRequest() {
