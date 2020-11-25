@@ -10,7 +10,10 @@ build: off  # будем использовать свой скрипт сбор
 
 install:
   # запускаем SUT
-  - java -jar artifacts/app-order.jar &
+  - java -jar ./artifacts/app-order.jar &
 
 build_script:
+  - chmod +x gradlew
   - ./gradlew test --info "-Dselenide.headless=true"
+
+
