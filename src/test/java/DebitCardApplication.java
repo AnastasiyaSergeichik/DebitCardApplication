@@ -6,6 +6,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 class DebitCardApplication {
+
         @Test
         void shouldSubmitRequest() {
                 open("http://localhost:9999");
@@ -16,6 +17,7 @@ class DebitCardApplication {
                 form.$(".button").click();
                 $(".Success_successBlock__2L3Cw").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
         }
+
         @Test
         void shouldValidated() {
                 open("http://localhost:9999");
@@ -26,7 +28,6 @@ class DebitCardApplication {
                 form.$(".button").click();
                 $(".input_invalid .input__sub").shouldHave(exactText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
         }
-
 }
 
 
