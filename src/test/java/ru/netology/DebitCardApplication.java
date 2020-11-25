@@ -18,7 +18,7 @@ class DebitCardApplication {
 
    @BeforeAll
     static void setUpAll() {
-       System.setProperty("webdriver.chrome.driver", "C:\\Users\\LG-book\\Downloads\\chromedriver_win32\\chromedriver.exe");
+       System.setProperty("webdriver.chrome.driver", "C:\\Users\\LG-book\\Downloads\\chromedriver.exe");
     }
 
     @BeforeEach
