@@ -13,7 +13,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 class DebitCardApplication {
-
     private WebDriver driver;
 
     @BeforeAll
